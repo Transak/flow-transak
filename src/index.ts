@@ -104,6 +104,7 @@ function decodeTransactionStatus( { status, statusCode }: { status: number; stat
       switch ( statusCode ) {
         case 0:
           booleanTransactionFlags.isSuccessful = true
+          booleanTransactionFlags.isExecuted = true
           break;
         default:
           booleanTransactionFlags.isFailed = true
